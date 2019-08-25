@@ -31,6 +31,9 @@
 		E9C08F5B2310E09800A8C99F /* Minus.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C08F5A2310E09800A8C99F /* Minus.m */; };
 		E9C08F5E2311085C00A8C99F /* Mutiply.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C08F5D2311085C00A8C99F /* Mutiply.m */; };
 		E9C08F612311093900A8C99F /* CalculateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C08F602311093900A8C99F /* CalculateFactory.m */; };
+		E9E6BE4E2312CD3100398A66 /* ConcreteCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE4D2312CD3100398A66 /* ConcreteCompany.m */; };
+		E9E6BE512312CF6C00398A66 /* HRDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE502312CF6C00398A66 /* HRDepartment.m */; };
+		E9E6BE542312D13000398A66 /* FinanceDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE532312D13000398A66 /* FinanceDepartment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +107,13 @@
 		E9C08F5D2311085C00A8C99F /* Mutiply.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mutiply.m; sourceTree = "<group>"; };
 		E9C08F5F2311093900A8C99F /* CalculateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateFactory.h; sourceTree = "<group>"; };
 		E9C08F602311093900A8C99F /* CalculateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateFactory.m; sourceTree = "<group>"; };
+		E9E6BE4B2312CB4C00398A66 /* Company.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		E9E6BE4C2312CD3000398A66 /* ConcreteCompany.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCompany.h; sourceTree = "<group>"; };
+		E9E6BE4D2312CD3100398A66 /* ConcreteCompany.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCompany.m; sourceTree = "<group>"; };
+		E9E6BE4F2312CF6C00398A66 /* HRDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRDepartment.h; sourceTree = "<group>"; };
+		E9E6BE502312CF6C00398A66 /* HRDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRDepartment.m; sourceTree = "<group>"; };
+		E9E6BE522312D13000398A66 /* FinanceDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinanceDepartment.h; sourceTree = "<group>"; };
+		E9E6BE532312D13000398A66 /* FinanceDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinanceDepartment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +217,7 @@
 				E9806B2B230E63A000C95CBC /* AppDelegate.m */,
 				E9806B2D230E63A000C95CBC /* ViewController.h */,
 				E9806B2E230E63A000C95CBC /* ViewController.m */,
+				E9E6BE4A2312C7C700398A66 /* Composite */,
 				E976C8632312838C005A1CBA /* Adapter */,
 				E976C8552312733B005A1CBA /* Decorate */,
 				E976C84723125E20005A1CBA /* Strategy */,
@@ -252,6 +263,20 @@
 				E9C08F602311093900A8C99F /* CalculateFactory.m */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		E9E6BE4A2312C7C700398A66 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				E9E6BE4B2312CB4C00398A66 /* Company.h */,
+				E9E6BE4C2312CD3000398A66 /* ConcreteCompany.h */,
+				E9E6BE4D2312CD3100398A66 /* ConcreteCompany.m */,
+				E9E6BE4F2312CF6C00398A66 /* HRDepartment.h */,
+				E9E6BE502312CF6C00398A66 /* HRDepartment.m */,
+				E9E6BE522312D13000398A66 /* FinanceDepartment.h */,
+				E9E6BE532312D13000398A66 /* FinanceDepartment.m */,
+			);
+			path = Composite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,10 +419,13 @@
 				E976C85F23127A18005A1CBA /* Egg.m in Sources */,
 				E976C86B23128505005A1CBA /* VlcPlayer.m in Sources */,
 				E976C868231284A6005A1CBA /* AudioPlayer.m in Sources */,
+				E9E6BE4E2312CD3100398A66 /* ConcreteCompany.m in Sources */,
 				E9806B2F230E63A000C95CBC /* ViewController.m in Sources */,
 				E976C86E23128515005A1CBA /* Mp4Player.m in Sources */,
 				E976C85423125FC1005A1CBA /* CashContext.m in Sources */,
+				E9E6BE542312D13000398A66 /* FinanceDepartment.m in Sources */,
 				E9C08F582310E00C00A8C99F /* Add.m in Sources */,
+				E9E6BE512312CF6C00398A66 /* HRDepartment.m in Sources */,
 				E9806B3A230E63A100C95CBC /* main.m in Sources */,
 				E9C08F612311093900A8C99F /* CalculateFactory.m in Sources */,
 				E9806B2C230E63A000C95CBC /* AppDelegate.m in Sources */,
