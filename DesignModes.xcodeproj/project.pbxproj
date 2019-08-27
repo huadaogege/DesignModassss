@@ -34,6 +34,9 @@
 		E9E6BE4E2312CD3100398A66 /* ConcreteCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE4D2312CD3100398A66 /* ConcreteCompany.m */; };
 		E9E6BE512312CF6C00398A66 /* HRDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE502312CF6C00398A66 /* HRDepartment.m */; };
 		E9E6BE542312D13000398A66 /* FinanceDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE532312D13000398A66 /* FinanceDepartment.m */; };
+		E9F725662314C84B007D7904 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F725652314C84B007D7904 /* Director.m */; };
+		E9F725692314C86A007D7904 /* KFCMeals.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F725682314C86A007D7904 /* KFCMeals.m */; };
+		E9F7256C2314C87C007D7904 /* KFCMealBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F7256B2314C87C007D7904 /* KFCMealBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +117,14 @@
 		E9E6BE502312CF6C00398A66 /* HRDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRDepartment.m; sourceTree = "<group>"; };
 		E9E6BE522312D13000398A66 /* FinanceDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinanceDepartment.h; sourceTree = "<group>"; };
 		E9E6BE532312D13000398A66 /* FinanceDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinanceDepartment.m; sourceTree = "<group>"; };
+		E9F725602314C541007D7904 /* KFCProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFCProduct.h; sourceTree = "<group>"; };
+		E9F725612314C55C007D7904 /* KFCProductBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFCProductBuilder.h; sourceTree = "<group>"; };
+		E9F725642314C84B007D7904 /* Director.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		E9F725652314C84B007D7904 /* Director.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		E9F725672314C86A007D7904 /* KFCMeals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFCMeals.h; sourceTree = "<group>"; };
+		E9F725682314C86A007D7904 /* KFCMeals.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFCMeals.m; sourceTree = "<group>"; };
+		E9F7256A2314C87C007D7904 /* KFCMealBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFCMealBuilder.h; sourceTree = "<group>"; };
+		E9F7256B2314C87C007D7904 /* KFCMealBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFCMealBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +228,7 @@
 				E9806B2B230E63A000C95CBC /* AppDelegate.m */,
 				E9806B2D230E63A000C95CBC /* ViewController.h */,
 				E9806B2E230E63A000C95CBC /* ViewController.m */,
+				E9F7255F2314C521007D7904 /* Builder */,
 				E9E6BE4A2312C7C700398A66 /* Composite */,
 				E976C8632312838C005A1CBA /* Adapter */,
 				E976C8552312733B005A1CBA /* Decorate */,
@@ -277,6 +289,37 @@
 				E9E6BE532312D13000398A66 /* FinanceDepartment.m */,
 			);
 			path = Composite;
+			sourceTree = "<group>";
+		};
+		E9F7255F2314C521007D7904 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				E9F725602314C541007D7904 /* KFCProduct.h */,
+				E9F725612314C55C007D7904 /* KFCProductBuilder.h */,
+				E9F725632314C834007D7904 /* Builder */,
+				E9F725622314C82A007D7904 /* Director */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		E9F725622314C82A007D7904 /* Director */ = {
+			isa = PBXGroup;
+			children = (
+				E9F725642314C84B007D7904 /* Director.h */,
+				E9F725652314C84B007D7904 /* Director.m */,
+			);
+			path = Director;
+			sourceTree = "<group>";
+		};
+		E9F725632314C834007D7904 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				E9F725672314C86A007D7904 /* KFCMeals.h */,
+				E9F725682314C86A007D7904 /* KFCMeals.m */,
+				E9F7256A2314C87C007D7904 /* KFCMealBuilder.h */,
+				E9F7256B2314C87C007D7904 /* KFCMealBuilder.m */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,12 +464,15 @@
 				E976C868231284A6005A1CBA /* AudioPlayer.m in Sources */,
 				E9E6BE4E2312CD3100398A66 /* ConcreteCompany.m in Sources */,
 				E9806B2F230E63A000C95CBC /* ViewController.m in Sources */,
+				E9F7256C2314C87C007D7904 /* KFCMealBuilder.m in Sources */,
 				E976C86E23128515005A1CBA /* Mp4Player.m in Sources */,
 				E976C85423125FC1005A1CBA /* CashContext.m in Sources */,
 				E9E6BE542312D13000398A66 /* FinanceDepartment.m in Sources */,
 				E9C08F582310E00C00A8C99F /* Add.m in Sources */,
 				E9E6BE512312CF6C00398A66 /* HRDepartment.m in Sources */,
+				E9F725662314C84B007D7904 /* Director.m in Sources */,
 				E9806B3A230E63A100C95CBC /* main.m in Sources */,
+				E9F725692314C86A007D7904 /* KFCMeals.m in Sources */,
 				E9C08F612311093900A8C99F /* CalculateFactory.m in Sources */,
 				E9806B2C230E63A000C95CBC /* AppDelegate.m in Sources */,
 				E976C84B23125EDD005A1CBA /* CashNormal.m in Sources */,

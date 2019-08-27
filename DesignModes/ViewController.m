@@ -22,6 +22,9 @@
 #import "ConcreteCompany.h"
 #import "HRDepartment.h"
 #import "FinanceDepartment.h"
+// 建造者模式
+#import "KFCMealBuilder.h"
+#import "Director.h"
 
 @interface ViewController ()
 
@@ -67,6 +70,7 @@
      */
     
     /* 组合模式 */
+    /*
     ConcreteCompany *headCompany = [[ConcreteCompany alloc] initWithName:@"奇安信公司"];
     id<Company> headHR = [[HRDepartment alloc] initWithName:@"奇安信公司人力资源部"];
     id<Company> headFinance = [[FinanceDepartment alloc] initWithName:@"奇安信公司财务部"];
@@ -93,7 +97,19 @@
     [headCompany display];
     NSLog(@"公司部门职责:-------------------");
     [headCompany lineOfDuty];
+     */
     
+    /* 建造者模式 */
+    // 有统一建造者
+    /*
+    id <KFCProductBuilder> builder = [[KFCMealBuilder alloc] init];
+    Director *director = [[Director alloc] initWithBuilder:builder];
+    [director createDrink:@"咖啡" food:@"奥尔良鸡肉包" snack:@"鸡米花"];
+    NSLog(@"\n\n");
+    // 无统一建造者
+    id <KFCProductBuilder> builder1 = [[KFCMealBuilder alloc] init];
+    [[[[builder1 createDrink:@"可乐"] createFood:@"巨无霸"] createSnack:@"鸡肉卷"] createMeals];
+    */
 }
 
 
