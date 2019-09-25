@@ -25,6 +25,8 @@
 // 建造者模式
 #import "KFCMealBuilder.h"
 #import "Director.h"
+// MVVM
+#import "CMVVMViewController.h"
 
 @interface ViewController ()
 
@@ -110,6 +112,10 @@
     id <KFCProductBuilder> builder1 = [[KFCMealBuilder alloc] init];
     [[[[builder1 createDrink:@"可乐"] createFood:@"巨无霸"] createSnack:@"鸡肉卷"] createMeals];
     */
+    
+    CMVVMViewController *cmvc = [[CMVVMViewController alloc] init];
+    [self addChildViewController:cmvc];
+    [self.view addSubview:cmvc.view];
 }
 
 
