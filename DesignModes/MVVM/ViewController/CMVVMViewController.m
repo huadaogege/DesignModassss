@@ -32,6 +32,7 @@
 
 - (void)bindModel {
     __weak typeof(self) weakSelf = self;
+    // DataSource抽出来, 解耦
     self.dataSource = [[CMVVMTableDataSource alloc] initWithIdentifier:@"cmvvmcell" dataSource:^(CMVVMViewCell * _Nonnull cell, CMVVMModel * _Nonnull model, NSIndexPath * _Nonnull indexPath) {
         cell.cTitleLabel.text = model.ctitle;
         cell.cDescriptionLabel.text = model.cdescription;
@@ -50,21 +51,7 @@
 
 - (void)setupViews {
     [self.view addSubview:self.tableView];
-    self.refreshBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 50)];
-    [self.refreshBtn setTitle:@"加载数据" forState:UIControlStateNormal];
-    [self.refreshBtn setTitle:@"加载中..." forState:UIControlStateDisabled];
-    [self.refreshBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.refreshBtn setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
-    self.refreshBtn.center = self.view.center;
     [self.view addSubview:self.refreshBtn];
-    [self.refreshBtn addTarget:self
-                        action:@selector(refreshBtnAction)
-              forControlEvents:UIControlEventTouchUpInside];
-}
-
-- (void)refreshBtnAction{
-    self.refreshBtn.enabled = NO;
-    [self.viewModel refreshDataAction];
 }
 
 - (UITableView *)tableView {
@@ -74,6 +61,26 @@
         _tableView.dataSource = self.dataSource;
     }
     return _tableView;
+}
+
+- (UIButton *)refreshBtn {
+    if (!_refreshBtn) {
+        _refreshBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 50)];
+        [_refreshBtn setTitle:@"加载数据" forState:UIControlStateNormal];
+        [_refreshBtn setTitle:@"加载中..." forState:UIControlStateDisabled];
+        [_refreshBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_refreshBtn setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+        _refreshBtn.center = self.view.center;
+        [_refreshBtn addTarget:self
+                        action:@selector(refreshBtnAction)
+              forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _refreshBtn;
+}
+
+- (void)refreshBtnAction{
+    self.refreshBtn.enabled = NO;
+    [self.viewModel refreshDataAction];
 }
 
 #pragma mark -- TableViewDelegate --

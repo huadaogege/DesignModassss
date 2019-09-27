@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9061C15233B4784004D0F05 /* CMVVMViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9061C14233B4784004D0F05 /* CMVVMViewCell.m */; };
+		E9061C18233B47A1004D0F05 /* CMVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9061C17233B47A1004D0F05 /* CMVVMModel.m */; };
+		E9061C1B233B47B3004D0F05 /* CMVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9061C1A233B47B3004D0F05 /* CMVVMViewModel.m */; };
+		E9061C1E233B47CB004D0F05 /* CMVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9061C1D233B47CB004D0F05 /* CMVVMViewController.m */; };
+		E9061C22233B603A004D0F05 /* CMVVMTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E9061C21233B603A004D0F05 /* CMVVMTableDataSource.m */; };
 		E976C84B23125EDD005A1CBA /* CashNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = E976C84A23125EDD005A1CBA /* CashNormal.m */; };
 		E976C84E23125EF0005A1CBA /* CashRebate.m in Sources */ = {isa = PBXBuildFile; fileRef = E976C84D23125EF0005A1CBA /* CashRebate.m */; };
 		E976C85123125F26005A1CBA /* CashReturnMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = E976C85023125F26005A1CBA /* CashReturnMoney.m */; };
@@ -57,6 +62,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9061C13233B4784004D0F05 /* CMVVMViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMVVMViewCell.h; sourceTree = "<group>"; };
+		E9061C14233B4784004D0F05 /* CMVVMViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMVVMViewCell.m; sourceTree = "<group>"; };
+		E9061C16233B47A1004D0F05 /* CMVVMModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMVVMModel.h; sourceTree = "<group>"; };
+		E9061C17233B47A1004D0F05 /* CMVVMModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMVVMModel.m; sourceTree = "<group>"; };
+		E9061C19233B47B3004D0F05 /* CMVVMViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMVVMViewModel.h; sourceTree = "<group>"; };
+		E9061C1A233B47B3004D0F05 /* CMVVMViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMVVMViewModel.m; sourceTree = "<group>"; };
+		E9061C1C233B47CB004D0F05 /* CMVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMVVMViewController.h; sourceTree = "<group>"; };
+		E9061C1D233B47CB004D0F05 /* CMVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMVVMViewController.m; sourceTree = "<group>"; };
+		E9061C1F233B4F8A004D0F05 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E9061C20233B603A004D0F05 /* CMVVMTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMVVMTableDataSource.h; sourceTree = "<group>"; };
+		E9061C21233B603A004D0F05 /* CMVVMTableDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMVVMTableDataSource.m; sourceTree = "<group>"; };
 		E976C84823125E40005A1CBA /* CashBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashBase.h; sourceTree = "<group>"; };
 		E976C84923125EDD005A1CBA /* CashNormal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashNormal.h; sourceTree = "<group>"; };
 		E976C84A23125EDD005A1CBA /* CashNormal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashNormal.m; sourceTree = "<group>"; };
@@ -152,6 +168,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9061C0B233B46E4004D0F05 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E9061C0F233B46FB004D0F05 /* View */,
+				E9061C0E233B46F9004D0F05 /* Model */,
+				E9061C0D233B46F6004D0F05 /* ViewModel */,
+				E9061C0C233B46F3004D0F05 /* ViewController */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		E9061C0C233B46F3004D0F05 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9061C1C233B47CB004D0F05 /* CMVVMViewController.h */,
+				E9061C1D233B47CB004D0F05 /* CMVVMViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9061C0D233B46F6004D0F05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E9061C19233B47B3004D0F05 /* CMVVMViewModel.h */,
+				E9061C1A233B47B3004D0F05 /* CMVVMViewModel.m */,
+				E9061C20233B603A004D0F05 /* CMVVMTableDataSource.h */,
+				E9061C21233B603A004D0F05 /* CMVVMTableDataSource.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E9061C0E233B46F9004D0F05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9061C16233B47A1004D0F05 /* CMVVMModel.h */,
+				E9061C17233B47A1004D0F05 /* CMVVMModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9061C0F233B46FB004D0F05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9061C13233B4784004D0F05 /* CMVVMViewCell.h */,
+				E9061C14233B4784004D0F05 /* CMVVMViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E976C84723125E20005A1CBA /* Strategy */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +269,7 @@
 		E9806B1E230E63A000C95CBC = {
 			isa = PBXGroup;
 			children = (
+				E9061C1F233B4F8A004D0F05 /* PrefixHeader.pch */,
 				E9806B29230E63A000C95CBC /* DesignModes */,
 				E9806B42230E63A100C95CBC /* DesignModesTests */,
 				E9806B4D230E63A100C95CBC /* DesignModesUITests */,
@@ -228,6 +294,7 @@
 				E9806B2B230E63A000C95CBC /* AppDelegate.m */,
 				E9806B2D230E63A000C95CBC /* ViewController.h */,
 				E9806B2E230E63A000C95CBC /* ViewController.m */,
+				E9061C0B233B46E4004D0F05 /* MVVM */,
 				E9F7255F2314C521007D7904 /* Builder */,
 				E9E6BE4A2312C7C700398A66 /* Composite */,
 				E976C8632312838C005A1CBA /* Adapter */,
@@ -452,18 +519,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9061C1E233B47CB004D0F05 /* CMVVMViewController.m in Sources */,
+				E9061C18233B47A1004D0F05 /* CMVVMModel.m in Sources */,
 				E9C08F5E2311085C00A8C99F /* Mutiply.m in Sources */,
 				E976C84E23125EF0005A1CBA /* CashRebate.m in Sources */,
 				E976C8592312786C005A1CBA /* ChickenBurger.m in Sources */,
 				E976C87123128535005A1CBA /* MediaAdapter.m in Sources */,
 				E976C86223127ACA005A1CBA /* Sausage.m in Sources */,
+				E9061C22233B603A004D0F05 /* CMVVMTableDataSource.m in Sources */,
 				E976C85C23127952005A1CBA /* Condiment.m in Sources */,
 				E9C08F5B2310E09800A8C99F /* Minus.m in Sources */,
+				E9061C1B233B47B3004D0F05 /* CMVVMViewModel.m in Sources */,
 				E976C85F23127A18005A1CBA /* Egg.m in Sources */,
 				E976C86B23128505005A1CBA /* VlcPlayer.m in Sources */,
 				E976C868231284A6005A1CBA /* AudioPlayer.m in Sources */,
 				E9E6BE4E2312CD3100398A66 /* ConcreteCompany.m in Sources */,
 				E9806B2F230E63A000C95CBC /* ViewController.m in Sources */,
+				E9061C15233B4784004D0F05 /* CMVVMViewCell.m in Sources */,
 				E9F7256C2314C87C007D7904 /* KFCMealBuilder.m in Sources */,
 				E976C86E23128515005A1CBA /* Mp4Player.m in Sources */,
 				E976C85423125FC1005A1CBA /* CashContext.m in Sources */,
@@ -649,6 +721,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3D66462B2;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = DesignModes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -667,6 +742,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3D66462B2;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = DesignModes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
