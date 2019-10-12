@@ -27,6 +27,8 @@
 #import "Director.h"
 // MVVM
 #import "CMVVMViewController.h"
+// MVP
+#import "MVPViewController.h"
 
 @interface ViewController ()
 
@@ -113,9 +115,17 @@
     [[[[builder1 createDrink:@"可乐"] createFood:@"巨无霸"] createSnack:@"鸡肉卷"] createMeals];
     */
     
+    // MVVM
+    /*
     CMVVMViewController *cmvc = [[CMVVMViewController alloc] init];
     [self addChildViewController:cmvc];
     [self.view addSubview:cmvc.view];
+     */
+    
+    // MVP
+    MVPViewController *mvpvc = [[MVPViewController alloc] init];
+    [self addChildViewController:mvpvc];
+    [self.view addSubview:mvpvc.view];
 }
 
 
