@@ -1,18 +1,17 @@
 //
-//  KFCMeals.h
+//  FemaleFactory.h
 //  DesignModes
 //
-//  Created by 崔玉冠 on 2019/8/27.
+//  Created by 崔玉冠 on 2019/12/23.
 //  Copyright © 2019 huadao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "KFCProduct.h"
+#import "FactoryProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KFCMeals : NSObject <KFCProduct>
-
+@interface FemaleFactory : NSObject <HumanFactoryProtocol>
 
 @end
 

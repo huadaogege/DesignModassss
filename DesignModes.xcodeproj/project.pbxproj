@@ -12,6 +12,23 @@
 		E9061C1B233B47B3004D0F05 /* CMVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9061C1A233B47B3004D0F05 /* CMVVMViewModel.m */; };
 		E9061C1E233B47CB004D0F05 /* CMVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9061C1D233B47CB004D0F05 /* CMVVMViewController.m */; };
 		E9061C22233B603A004D0F05 /* CMVVMTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E9061C21233B603A004D0F05 /* CMVVMTableDataSource.m */; };
+		E931958323B07066009EE6F2 /* AbstractYellowHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = E931958223B07066009EE6F2 /* AbstractYellowHuman.m */; };
+		E931958623B07078009EE6F2 /* AbstractWhiteHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = E931958523B07078009EE6F2 /* AbstractWhiteHuman.m */; };
+		E931958923B07088009EE6F2 /* AbstractBlackHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = E931958823B07088009EE6F2 /* AbstractBlackHuman.m */; };
+		E931958D23B071D2009EE6F2 /* FemaleYellowHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = E931958C23B071D2009EE6F2 /* FemaleYellowHuman.m */; };
+		E931959023B071E2009EE6F2 /* MaleYellowHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = E931958F23B071E2009EE6F2 /* MaleYellowHuman.m */; };
+		E931959323B0721F009EE6F2 /* FemaleWhiteHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = E931959223B0721F009EE6F2 /* FemaleWhiteHuman.m */; };
+		E931959623B07233009EE6F2 /* MaleWhiteHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = E931959523B07233009EE6F2 /* MaleWhiteHuman.m */; };
+		E931959923B07254009EE6F2 /* FemaleBlackHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = E931959823B07254009EE6F2 /* FemaleBlackHuman.m */; };
+		E931959C23B07265009EE6F2 /* MaleBlackHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = E931959B23B07265009EE6F2 /* MaleBlackHuman.m */; };
+		E931959F23B07313009EE6F2 /* FemaleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E931959E23B07313009EE6F2 /* FemaleFactory.m */; };
+		E93195A223B07332009EE6F2 /* MaleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E93195A123B07332009EE6F2 /* MaleFactory.m */; };
+		E93195AD23B0E578009EE6F2 /* CarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E93195AC23B0E578009EE6F2 /* CarModel.m */; };
+		E93195B123B0E920009EE6F2 /* BenzModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E93195B023B0E920009EE6F2 /* BenzModel.m */; };
+		E93195B423B0EACC009EE6F2 /* BmwModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E93195B323B0EACC009EE6F2 /* BmwModel.m */; };
+		E93195B723B0EB02009EE6F2 /* CarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E93195B623B0EB02009EE6F2 /* CarBuilder.m */; };
+		E93195BA23B0EB9F009EE6F2 /* BenzBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E93195B923B0EB9F009EE6F2 /* BenzBuilder.m */; };
+		E93195BD23B0EBAF009EE6F2 /* BmwBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E93195BC23B0EBAF009EE6F2 /* BmwBuilder.m */; };
 		E94B5BB223507E5E009DAF52 /* MVPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B5BB123507E5E009DAF52 /* MVPresenter.m */; };
 		E94B5BB523507E7B009DAF52 /* MVPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B5BB423507E7B009DAF52 /* MVPModel.m */; };
 		E94B5BB823507E8F009DAF52 /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B5BB723507E8F009DAF52 /* MVPViewController.m */; };
@@ -36,16 +53,9 @@
 		E9806B3A230E63A100C95CBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9806B39230E63A100C95CBC /* main.m */; };
 		E9806B44230E63A100C95CBC /* DesignModesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9806B43230E63A100C95CBC /* DesignModesTests.m */; };
 		E9806B4F230E63A100C95CBC /* DesignModesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9806B4E230E63A100C95CBC /* DesignModesUITests.m */; };
-		E9C08F582310E00C00A8C99F /* Add.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C08F572310E00C00A8C99F /* Add.m */; };
-		E9C08F5B2310E09800A8C99F /* Minus.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C08F5A2310E09800A8C99F /* Minus.m */; };
-		E9C08F5E2311085C00A8C99F /* Mutiply.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C08F5D2311085C00A8C99F /* Mutiply.m */; };
-		E9C08F612311093900A8C99F /* CalculateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C08F602311093900A8C99F /* CalculateFactory.m */; };
 		E9E6BE4E2312CD3100398A66 /* ConcreteCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE4D2312CD3100398A66 /* ConcreteCompany.m */; };
 		E9E6BE512312CF6C00398A66 /* HRDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE502312CF6C00398A66 /* HRDepartment.m */; };
 		E9E6BE542312D13000398A66 /* FinanceDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE532312D13000398A66 /* FinanceDepartment.m */; };
-		E9F725662314C84B007D7904 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F725652314C84B007D7904 /* Director.m */; };
-		E9F725692314C86A007D7904 /* KFCMeals.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F725682314C86A007D7904 /* KFCMeals.m */; };
-		E9F7256C2314C87C007D7904 /* KFCMealBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F7256B2314C87C007D7904 /* KFCMealBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +87,43 @@
 		E9061C1F233B4F8A004D0F05 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E9061C20233B603A004D0F05 /* CMVVMTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMVVMTableDataSource.h; sourceTree = "<group>"; };
 		E9061C21233B603A004D0F05 /* CMVVMTableDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMVVMTableDataSource.m; sourceTree = "<group>"; };
+		E931957E23B06ED9009EE6F2 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		E931957F23B06F76009EE6F2 /* FactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryProtocol.h; sourceTree = "<group>"; };
+		E931958123B07066009EE6F2 /* AbstractYellowHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractYellowHuman.h; sourceTree = "<group>"; };
+		E931958223B07066009EE6F2 /* AbstractYellowHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractYellowHuman.m; sourceTree = "<group>"; };
+		E931958423B07078009EE6F2 /* AbstractWhiteHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractWhiteHuman.h; sourceTree = "<group>"; };
+		E931958523B07078009EE6F2 /* AbstractWhiteHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractWhiteHuman.m; sourceTree = "<group>"; };
+		E931958723B07088009EE6F2 /* AbstractBlackHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractBlackHuman.h; sourceTree = "<group>"; };
+		E931958823B07088009EE6F2 /* AbstractBlackHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractBlackHuman.m; sourceTree = "<group>"; };
+		E931958B23B071D2009EE6F2 /* FemaleYellowHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleYellowHuman.h; sourceTree = "<group>"; };
+		E931958C23B071D2009EE6F2 /* FemaleYellowHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleYellowHuman.m; sourceTree = "<group>"; };
+		E931958E23B071E2009EE6F2 /* MaleYellowHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaleYellowHuman.h; sourceTree = "<group>"; };
+		E931958F23B071E2009EE6F2 /* MaleYellowHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleYellowHuman.m; sourceTree = "<group>"; };
+		E931959123B0721F009EE6F2 /* FemaleWhiteHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleWhiteHuman.h; sourceTree = "<group>"; };
+		E931959223B0721F009EE6F2 /* FemaleWhiteHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleWhiteHuman.m; sourceTree = "<group>"; };
+		E931959423B07233009EE6F2 /* MaleWhiteHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaleWhiteHuman.h; sourceTree = "<group>"; };
+		E931959523B07233009EE6F2 /* MaleWhiteHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleWhiteHuman.m; sourceTree = "<group>"; };
+		E931959723B07254009EE6F2 /* FemaleBlackHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleBlackHuman.h; sourceTree = "<group>"; };
+		E931959823B07254009EE6F2 /* FemaleBlackHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleBlackHuman.m; sourceTree = "<group>"; };
+		E931959A23B07265009EE6F2 /* MaleBlackHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaleBlackHuman.h; sourceTree = "<group>"; };
+		E931959B23B07265009EE6F2 /* MaleBlackHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleBlackHuman.m; sourceTree = "<group>"; };
+		E931959D23B07313009EE6F2 /* FemaleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleFactory.h; sourceTree = "<group>"; };
+		E931959E23B07313009EE6F2 /* FemaleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleFactory.m; sourceTree = "<group>"; };
+		E93195A023B07332009EE6F2 /* MaleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaleFactory.h; sourceTree = "<group>"; };
+		E93195A123B07332009EE6F2 /* MaleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleFactory.m; sourceTree = "<group>"; };
+		E93195AB23B0E578009EE6F2 /* CarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarModel.h; sourceTree = "<group>"; };
+		E93195AC23B0E578009EE6F2 /* CarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarModel.m; sourceTree = "<group>"; };
+		E93195AE23B0E67A009EE6F2 /* CarModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarModelProtocol.h; sourceTree = "<group>"; };
+		E93195AF23B0E920009EE6F2 /* BenzModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BenzModel.h; sourceTree = "<group>"; };
+		E93195B023B0E920009EE6F2 /* BenzModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BenzModel.m; sourceTree = "<group>"; };
+		E93195B223B0EACC009EE6F2 /* BmwModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BmwModel.h; sourceTree = "<group>"; };
+		E93195B323B0EACC009EE6F2 /* BmwModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BmwModel.m; sourceTree = "<group>"; };
+		E93195B523B0EB02009EE6F2 /* CarBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarBuilder.h; sourceTree = "<group>"; };
+		E93195B623B0EB02009EE6F2 /* CarBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarBuilder.m; sourceTree = "<group>"; };
+		E93195B823B0EB9F009EE6F2 /* BenzBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BenzBuilder.h; sourceTree = "<group>"; };
+		E93195B923B0EB9F009EE6F2 /* BenzBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BenzBuilder.m; sourceTree = "<group>"; };
+		E93195BB23B0EBAF009EE6F2 /* BmwBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BmwBuilder.h; sourceTree = "<group>"; };
+		E93195BC23B0EBAF009EE6F2 /* BmwBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BmwBuilder.m; sourceTree = "<group>"; };
 		E94B5BB023507E5E009DAF52 /* MVPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPresenter.h; sourceTree = "<group>"; };
 		E94B5BB123507E5E009DAF52 /* MVPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPresenter.m; sourceTree = "<group>"; };
 		E94B5BB323507E7B009DAF52 /* MVPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPModel.h; sourceTree = "<group>"; };
@@ -130,15 +177,6 @@
 		E9806B4A230E63A100C95CBC /* DesignModesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignModesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9806B4E230E63A100C95CBC /* DesignModesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignModesUITests.m; sourceTree = "<group>"; };
 		E9806B50230E63A100C95CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9C08F552310DDBF00A8C99F /* Calculate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculate.h; sourceTree = "<group>"; };
-		E9C08F562310E00C00A8C99F /* Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Add.h; sourceTree = "<group>"; };
-		E9C08F572310E00C00A8C99F /* Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Add.m; sourceTree = "<group>"; };
-		E9C08F592310E09800A8C99F /* Minus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Minus.h; sourceTree = "<group>"; };
-		E9C08F5A2310E09800A8C99F /* Minus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Minus.m; sourceTree = "<group>"; };
-		E9C08F5C2311085C00A8C99F /* Mutiply.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mutiply.h; sourceTree = "<group>"; };
-		E9C08F5D2311085C00A8C99F /* Mutiply.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mutiply.m; sourceTree = "<group>"; };
-		E9C08F5F2311093900A8C99F /* CalculateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateFactory.h; sourceTree = "<group>"; };
-		E9C08F602311093900A8C99F /* CalculateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateFactory.m; sourceTree = "<group>"; };
 		E9E6BE4B2312CB4C00398A66 /* Company.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
 		E9E6BE4C2312CD3000398A66 /* ConcreteCompany.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCompany.h; sourceTree = "<group>"; };
 		E9E6BE4D2312CD3100398A66 /* ConcreteCompany.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCompany.m; sourceTree = "<group>"; };
@@ -146,14 +184,6 @@
 		E9E6BE502312CF6C00398A66 /* HRDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRDepartment.m; sourceTree = "<group>"; };
 		E9E6BE522312D13000398A66 /* FinanceDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinanceDepartment.h; sourceTree = "<group>"; };
 		E9E6BE532312D13000398A66 /* FinanceDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinanceDepartment.m; sourceTree = "<group>"; };
-		E9F725602314C541007D7904 /* KFCProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFCProduct.h; sourceTree = "<group>"; };
-		E9F725612314C55C007D7904 /* KFCProductBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFCProductBuilder.h; sourceTree = "<group>"; };
-		E9F725642314C84B007D7904 /* Director.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
-		E9F725652314C84B007D7904 /* Director.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
-		E9F725672314C86A007D7904 /* KFCMeals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFCMeals.h; sourceTree = "<group>"; };
-		E9F725682314C86A007D7904 /* KFCMeals.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFCMeals.m; sourceTree = "<group>"; };
-		E9F7256A2314C87C007D7904 /* KFCMealBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFCMealBuilder.h; sourceTree = "<group>"; };
-		E9F7256B2314C87C007D7904 /* KFCMealBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFCMealBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +258,79 @@
 				E9061C14233B4784004D0F05 /* CMVVMViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E931957D23B06E5F009EE6F2 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E931957E23B06ED9009EE6F2 /* Human.h */,
+				E931957F23B06F76009EE6F2 /* FactoryProtocol.h */,
+				E931959D23B07313009EE6F2 /* FemaleFactory.h */,
+				E931959E23B07313009EE6F2 /* FemaleFactory.m */,
+				E93195A023B07332009EE6F2 /* MaleFactory.h */,
+				E93195A123B07332009EE6F2 /* MaleFactory.m */,
+				E931958A23B0718D009EE6F2 /* Human */,
+				E931958023B07043009EE6F2 /* Abstract */,
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		E931958023B07043009EE6F2 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				E931958123B07066009EE6F2 /* AbstractYellowHuman.h */,
+				E931958223B07066009EE6F2 /* AbstractYellowHuman.m */,
+				E931958423B07078009EE6F2 /* AbstractWhiteHuman.h */,
+				E931958523B07078009EE6F2 /* AbstractWhiteHuman.m */,
+				E931958723B07088009EE6F2 /* AbstractBlackHuman.h */,
+				E931958823B07088009EE6F2 /* AbstractBlackHuman.m */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		E931958A23B0718D009EE6F2 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				E931958B23B071D2009EE6F2 /* FemaleYellowHuman.h */,
+				E931958C23B071D2009EE6F2 /* FemaleYellowHuman.m */,
+				E931958E23B071E2009EE6F2 /* MaleYellowHuman.h */,
+				E931958F23B071E2009EE6F2 /* MaleYellowHuman.m */,
+				E931959123B0721F009EE6F2 /* FemaleWhiteHuman.h */,
+				E931959223B0721F009EE6F2 /* FemaleWhiteHuman.m */,
+				E931959423B07233009EE6F2 /* MaleWhiteHuman.h */,
+				E931959523B07233009EE6F2 /* MaleWhiteHuman.m */,
+				E931959723B07254009EE6F2 /* FemaleBlackHuman.h */,
+				E931959823B07254009EE6F2 /* FemaleBlackHuman.m */,
+				E931959A23B07265009EE6F2 /* MaleBlackHuman.h */,
+				E931959B23B07265009EE6F2 /* MaleBlackHuman.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		E93195A623B0E4ED009EE6F2 /* CarBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				E93195B523B0EB02009EE6F2 /* CarBuilder.h */,
+				E93195B623B0EB02009EE6F2 /* CarBuilder.m */,
+				E93195B823B0EB9F009EE6F2 /* BenzBuilder.h */,
+				E93195B923B0EB9F009EE6F2 /* BenzBuilder.m */,
+				E93195BB23B0EBAF009EE6F2 /* BmwBuilder.h */,
+				E93195BC23B0EBAF009EE6F2 /* BmwBuilder.m */,
+			);
+			path = CarBuilder;
+			sourceTree = "<group>";
+		};
+		E93195AA23B0E540009EE6F2 /* CarModel */ = {
+			isa = PBXGroup;
+			children = (
+				E93195AB23B0E578009EE6F2 /* CarModel.h */,
+				E93195AC23B0E578009EE6F2 /* CarModel.m */,
+				E93195AF23B0E920009EE6F2 /* BenzModel.h */,
+				E93195B023B0E920009EE6F2 /* BenzModel.m */,
+				E93195B223B0EACC009EE6F2 /* BmwModel.h */,
+				E93195B323B0EACC009EE6F2 /* BmwModel.m */,
+			);
+			path = CarModel;
 			sourceTree = "<group>";
 		};
 		E94B5BAA23507DBC009DAF52 /* MVP */ = {
@@ -401,15 +504,7 @@
 		E9806B5C230E63AB00C95CBC /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				E9C08F552310DDBF00A8C99F /* Calculate.h */,
-				E9C08F562310E00C00A8C99F /* Add.h */,
-				E9C08F572310E00C00A8C99F /* Add.m */,
-				E9C08F592310E09800A8C99F /* Minus.h */,
-				E9C08F5A2310E09800A8C99F /* Minus.m */,
-				E9C08F5C2311085C00A8C99F /* Mutiply.h */,
-				E9C08F5D2311085C00A8C99F /* Mutiply.m */,
-				E9C08F5F2311093900A8C99F /* CalculateFactory.h */,
-				E9C08F602311093900A8C99F /* CalculateFactory.m */,
+				E931957D23B06E5F009EE6F2 /* AbstractFactory */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -431,30 +526,9 @@
 		E9F7255F2314C521007D7904 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				E9F725602314C541007D7904 /* KFCProduct.h */,
-				E9F725612314C55C007D7904 /* KFCProductBuilder.h */,
-				E9F725632314C834007D7904 /* Builder */,
-				E9F725622314C82A007D7904 /* Director */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		E9F725622314C82A007D7904 /* Director */ = {
-			isa = PBXGroup;
-			children = (
-				E9F725642314C84B007D7904 /* Director.h */,
-				E9F725652314C84B007D7904 /* Director.m */,
-			);
-			path = Director;
-			sourceTree = "<group>";
-		};
-		E9F725632314C834007D7904 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				E9F725672314C86A007D7904 /* KFCMeals.h */,
-				E9F725682314C86A007D7904 /* KFCMeals.m */,
-				E9F7256A2314C87C007D7904 /* KFCMealBuilder.h */,
-				E9F7256B2314C87C007D7904 /* KFCMealBuilder.m */,
+				E93195AE23B0E67A009EE6F2 /* CarModelProtocol.h */,
+				E93195AA23B0E540009EE6F2 /* CarModel */,
+				E93195A623B0E4ED009EE6F2 /* CarBuilder */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -589,38 +663,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E931959C23B07265009EE6F2 /* MaleBlackHuman.m in Sources */,
 				E9061C1E233B47CB004D0F05 /* CMVVMViewController.m in Sources */,
+				E931959623B07233009EE6F2 /* MaleWhiteHuman.m in Sources */,
 				E9061C18233B47A1004D0F05 /* CMVVMModel.m in Sources */,
-				E9C08F5E2311085C00A8C99F /* Mutiply.m in Sources */,
 				E976C84E23125EF0005A1CBA /* CashRebate.m in Sources */,
 				E976C8592312786C005A1CBA /* ChickenBurger.m in Sources */,
 				E976C87123128535005A1CBA /* MediaAdapter.m in Sources */,
 				E976C86223127ACA005A1CBA /* Sausage.m in Sources */,
+				E93195B723B0EB02009EE6F2 /* CarBuilder.m in Sources */,
 				E9061C22233B603A004D0F05 /* CMVVMTableDataSource.m in Sources */,
 				E976C85C23127952005A1CBA /* Condiment.m in Sources */,
+				E931958923B07088009EE6F2 /* AbstractBlackHuman.m in Sources */,
 				E94B5BB523507E7B009DAF52 /* MVPModel.m in Sources */,
+				E931959F23B07313009EE6F2 /* FemaleFactory.m in Sources */,
 				E94B5BB223507E5E009DAF52 /* MVPresenter.m in Sources */,
-				E9C08F5B2310E09800A8C99F /* Minus.m in Sources */,
+				E93195B123B0E920009EE6F2 /* BenzModel.m in Sources */,
 				E9061C1B233B47B3004D0F05 /* CMVVMViewModel.m in Sources */,
+				E93195A223B07332009EE6F2 /* MaleFactory.m in Sources */,
 				E976C85F23127A18005A1CBA /* Egg.m in Sources */,
 				E976C86B23128505005A1CBA /* VlcPlayer.m in Sources */,
 				E976C868231284A6005A1CBA /* AudioPlayer.m in Sources */,
 				E9E6BE4E2312CD3100398A66 /* ConcreteCompany.m in Sources */,
 				E9806B2F230E63A000C95CBC /* ViewController.m in Sources */,
+				E931959323B0721F009EE6F2 /* FemaleWhiteHuman.m in Sources */,
+				E93195BA23B0EB9F009EE6F2 /* BenzBuilder.m in Sources */,
 				E9061C15233B4784004D0F05 /* CMVVMViewCell.m in Sources */,
-				E9F7256C2314C87C007D7904 /* KFCMealBuilder.m in Sources */,
 				E976C86E23128515005A1CBA /* Mp4Player.m in Sources */,
 				E976C85423125FC1005A1CBA /* CashContext.m in Sources */,
 				E9E6BE542312D13000398A66 /* FinanceDepartment.m in Sources */,
-				E9C08F582310E00C00A8C99F /* Add.m in Sources */,
 				E9E6BE512312CF6C00398A66 /* HRDepartment.m in Sources */,
-				E9F725662314C84B007D7904 /* Director.m in Sources */,
+				E931958323B07066009EE6F2 /* AbstractYellowHuman.m in Sources */,
 				E9806B3A230E63A100C95CBC /* main.m in Sources */,
-				E9F725692314C86A007D7904 /* KFCMeals.m in Sources */,
-				E9C08F612311093900A8C99F /* CalculateFactory.m in Sources */,
 				E9806B2C230E63A000C95CBC /* AppDelegate.m in Sources */,
 				E94B5BB823507E8F009DAF52 /* MVPViewController.m in Sources */,
+				E93195B423B0EACC009EE6F2 /* BmwModel.m in Sources */,
+				E931958D23B071D2009EE6F2 /* FemaleYellowHuman.m in Sources */,
+				E93195AD23B0E578009EE6F2 /* CarModel.m in Sources */,
 				E976C84B23125EDD005A1CBA /* CashNormal.m in Sources */,
+				E931958623B07078009EE6F2 /* AbstractWhiteHuman.m in Sources */,
+				E931959023B071E2009EE6F2 /* MaleYellowHuman.m in Sources */,
+				E93195BD23B0EBAF009EE6F2 /* BmwBuilder.m in Sources */,
+				E931959923B07254009EE6F2 /* FemaleBlackHuman.m in Sources */,
 				E94B5BBB23507F0C009DAF52 /* MVPNetworkManager.m in Sources */,
 				E976C85123125F26005A1CBA /* CashReturnMoney.m in Sources */,
 			);

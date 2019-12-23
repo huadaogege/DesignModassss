@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 // 工厂模式
-#import "CalculateFactory.h"
+#import "FemaleFactory.h"
+#import "MaleFactory.h"
+
 // 策略模式
 #import "CashContext.h"
 // 装饰器模式
@@ -23,8 +25,11 @@
 #import "HRDepartment.h"
 #import "FinanceDepartment.h"
 // 建造者模式
-#import "KFCMealBuilder.h"
-#import "Director.h"
+#import "BenzModel.h"
+#import "BenzBuilder.h"
+#import "BmwModel.h"
+#import "BmwBuilder.h"
+
 // MVVM
 #import "CMVVMViewController.h"
 // MVP
@@ -40,13 +45,7 @@
     [super viewDidLoad];
     
     /* 工厂模式 */
-    /*
-    id <Calculate> calculate = [CalculateFactory createCalculate:@"*"];
-    calculate.numberA = 5.0;
-    calculate.numberB = 6.0;
-    CGFloat result = [calculate calculate];
-    NSLog(@"%f", result);
-     */
+    
     
     /* 策略模式 */
     /*
@@ -104,16 +103,15 @@
      */
     
     /* 建造者模式 */
-    // 有统一建造者
-    /*
-    id <KFCProductBuilder> builder = [[KFCMealBuilder alloc] init];
-    Director *director = [[Director alloc] initWithBuilder:builder];
-    [director createDrink:@"咖啡" food:@"奥尔良鸡肉包" snack:@"鸡米花"];
-    NSLog(@"\n\n");
-    // 无统一建造者
-    id <KFCProductBuilder> builder1 = [[KFCMealBuilder alloc] init];
-    [[[[builder1 createDrink:@"可乐"] createFood:@"巨无霸"] createSnack:@"鸡肉卷"] createMeals];
-    */
+    NSArray *sequence = @[[NSNumber numberWithInteger:0],
+                          [NSNumber numberWithInteger:2],
+                          [NSNumber numberWithInteger:1],
+                          [NSNumber numberWithInteger:3]];
+    BenzBuilder *benzBuilder = [[BenzBuilder alloc] init];
+    [benzBuilder setSequence:sequence];
+    BenzModel *benzModel = (BenzModel *)[benzBuilder getCarModel];
+    [benzModel run];
+    
     
     // MVVM
     /*
@@ -123,9 +121,18 @@
      */
     
     // MVP
+    /*
     MVPViewController *mvpvc = [[MVPViewController alloc] init];
     [self addChildViewController:mvpvc];
     [self.view addSubview:mvpvc.view];
+     */
+    
+//    id <HumanProtocol> human = [MaleFactory createYellowHuman];
+//    [human getColor];
+//    [human getSex];
+//    [human talk];
+    
+    
 }
 
 
