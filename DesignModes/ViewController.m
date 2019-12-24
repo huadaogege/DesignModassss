@@ -103,10 +103,10 @@
      */
     
     /* 建造者模式 */
-    NSArray *sequence = @[[NSNumber numberWithInteger:0],
-                          [NSNumber numberWithInteger:2],
-                          [NSNumber numberWithInteger:1],
-                          [NSNumber numberWithInteger:3]];
+    NSArray *sequence = @[[NSNumber numberWithInteger:StartType],
+                          [NSNumber numberWithInteger:AlarmType],
+                          [NSNumber numberWithInteger:EngineBoomType],
+                          [NSNumber numberWithInteger:StopType]];
     BenzBuilder *benzBuilder = [[BenzBuilder alloc] init];
     [benzBuilder setSequence:sequence];
     BenzModel *benzModel = (BenzModel *)[benzBuilder getCarModel];

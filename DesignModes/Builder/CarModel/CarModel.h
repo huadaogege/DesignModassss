@@ -11,6 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum {
+    StartType = 0,
+    StopType,
+    AlarmType,
+    EngineBoomType
+}ActionType;
+
 
 @interface CarModel : NSObject <ModelProtocol>
 

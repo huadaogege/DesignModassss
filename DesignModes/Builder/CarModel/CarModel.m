@@ -30,18 +30,18 @@
 
 - (void)run {
     for (NSNumber *actionNumber in self.sequence) {
-        NSInteger action = [actionNumber integerValue];
+        ActionType action = [actionNumber intValue];
         switch (action) {
-            case 0:
+            case StartType:
                 [self start];
                 break;
-            case 1:
+            case StopType:
                 [self stop];
                 break;
-            case 2:
+            case AlarmType:
                 [self alarm];
                 break;
-            case 3:
+            case EngineBoomType:
                 [self engineBoom];
                 break;
                 
