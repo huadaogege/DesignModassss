@@ -25,10 +25,7 @@
 #import "HRDepartment.h"
 #import "FinanceDepartment.h"
 // 建造者模式
-#import "BenzModel.h"
-#import "BenzBuilder.h"
-#import "BmwModel.h"
-#import "BmwBuilder.h"
+#import "CarDirector.h"
 
 // MVVM
 #import "CMVVMViewController.h"
@@ -103,14 +100,12 @@
      */
     
     /* 建造者模式 */
-    NSArray *sequence = @[[NSNumber numberWithInteger:StartType],
-                          [NSNumber numberWithInteger:AlarmType],
-                          [NSNumber numberWithInteger:EngineBoomType],
-                          [NSNumber numberWithInteger:StopType]];
-    BenzBuilder *benzBuilder = [[BenzBuilder alloc] init];
-    [benzBuilder setSequence:sequence];
-    BenzModel *benzModel = (BenzModel *)[benzBuilder getCarModel];
-    [benzModel run];
+    CarDirector *director = [[CarDirector alloc] init];
+    CarModel *benzCarModel = [director getABenzCarModel];
+    [benzCarModel run];
+    
+    CarModel *bmwCarModel = [director getABmwCarModel];
+    [bmwCarModel run];
     
     
     // MVVM

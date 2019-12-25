@@ -11,8 +11,6 @@
 
 @protocol ModelProtocol <NSObject>
 
-@property (nonatomic, strong) NSArray *sequence;
-
 - (void)start;
 - (void)stop;
 - (void)alarm;

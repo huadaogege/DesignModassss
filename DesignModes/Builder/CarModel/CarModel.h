@@ -21,6 +21,8 @@ typedef enum {
 
 @interface CarModel : NSObject <ModelProtocol>
 
+@property (nonatomic, copy) NSArray *sequence;
+
 @end
 
 NS_ASSUME_NONNULL_END

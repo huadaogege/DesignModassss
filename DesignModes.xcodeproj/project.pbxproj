@@ -33,6 +33,7 @@
 		E94B5BB523507E7B009DAF52 /* MVPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B5BB423507E7B009DAF52 /* MVPModel.m */; };
 		E94B5BB823507E8F009DAF52 /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B5BB723507E8F009DAF52 /* MVPViewController.m */; };
 		E94B5BBB23507F0C009DAF52 /* MVPNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B5BBA23507F0C009DAF52 /* MVPNetworkManager.m */; };
+		E950502223B2F45600A654C5 /* CarDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = E950502123B2F45600A654C5 /* CarDirector.m */; };
 		E976C84B23125EDD005A1CBA /* CashNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = E976C84A23125EDD005A1CBA /* CashNormal.m */; };
 		E976C84E23125EF0005A1CBA /* CashRebate.m in Sources */ = {isa = PBXBuildFile; fileRef = E976C84D23125EF0005A1CBA /* CashRebate.m */; };
 		E976C85123125F26005A1CBA /* CashReturnMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = E976C85023125F26005A1CBA /* CashReturnMoney.m */; };
@@ -133,6 +134,8 @@
 		E94B5BB923507F0C009DAF52 /* MVPNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPNetworkManager.h; sourceTree = "<group>"; };
 		E94B5BBA23507F0C009DAF52 /* MVPNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPNetworkManager.m; sourceTree = "<group>"; };
 		E94B5BBC23507F28009DAF52 /* MVPProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPProtocol.h; sourceTree = "<group>"; };
+		E950502023B2F45600A654C5 /* CarDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarDirector.h; sourceTree = "<group>"; };
+		E950502123B2F45600A654C5 /* CarDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarDirector.m; sourceTree = "<group>"; };
 		E976C84823125E40005A1CBA /* CashBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashBase.h; sourceTree = "<group>"; };
 		E976C84923125EDD005A1CBA /* CashNormal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashNormal.h; sourceTree = "<group>"; };
 		E976C84A23125EDD005A1CBA /* CashNormal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashNormal.m; sourceTree = "<group>"; };
@@ -527,6 +530,8 @@
 			isa = PBXGroup;
 			children = (
 				E93195AE23B0E67A009EE6F2 /* CarModelProtocol.h */,
+				E950502023B2F45600A654C5 /* CarDirector.h */,
+				E950502123B2F45600A654C5 /* CarDirector.m */,
 				E93195AA23B0E540009EE6F2 /* CarModel */,
 				E93195A623B0E4ED009EE6F2 /* CarBuilder */,
 			);
@@ -666,6 +671,7 @@
 				E931959C23B07265009EE6F2 /* MaleBlackHuman.m in Sources */,
 				E9061C1E233B47CB004D0F05 /* CMVVMViewController.m in Sources */,
 				E931959623B07233009EE6F2 /* MaleWhiteHuman.m in Sources */,
+				E950502223B2F45600A654C5 /* CarDirector.m in Sources */,
 				E9061C18233B47A1004D0F05 /* CMVVMModel.m in Sources */,
 				E976C84E23125EF0005A1CBA /* CashRebate.m in Sources */,
 				E976C8592312786C005A1CBA /* ChickenBurger.m in Sources */,

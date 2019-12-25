@@ -10,8 +10,6 @@
 
 @implementation CarModel
 
-@synthesize sequence = _sequence;
-
 - (void)start {
     NSLog(@"是这样跑起来的");
 }
