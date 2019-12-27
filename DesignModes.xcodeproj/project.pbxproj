@@ -34,6 +34,12 @@
 		E94B5BB823507E8F009DAF52 /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B5BB723507E8F009DAF52 /* MVPViewController.m */; };
 		E94B5BBB23507F0C009DAF52 /* MVPNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B5BBA23507F0C009DAF52 /* MVPNetworkManager.m */; };
 		E950502223B2F45600A654C5 /* CarDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = E950502123B2F45600A654C5 /* CarDirector.m */; };
+		E9568B8E23B6308400760C81 /* AbstractMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = E9568B7723B6308300760C81 /* AbstractMediator.m */; };
+		E9568B8F23B6308400760C81 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = E9568B7823B6308400760C81 /* Mediator.m */; };
+		E9568B9123B6308400760C81 /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = E9568B7D23B6308400760C81 /* Stock.m */; };
+		E9568B9323B6308400760C81 /* Purchase.m in Sources */ = {isa = PBXBuildFile; fileRef = E9568B8123B6308400760C81 /* Purchase.m */; };
+		E9568B9523B6308400760C81 /* AbstractColleague.m in Sources */ = {isa = PBXBuildFile; fileRef = E9568B8523B6308400760C81 /* AbstractColleague.m */; };
+		E9568B9723B6308400760C81 /* Sale.m in Sources */ = {isa = PBXBuildFile; fileRef = E9568B8B23B6308400760C81 /* Sale.m */; };
 		E976C84B23125EDD005A1CBA /* CashNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = E976C84A23125EDD005A1CBA /* CashNormal.m */; };
 		E976C84E23125EF0005A1CBA /* CashRebate.m in Sources */ = {isa = PBXBuildFile; fileRef = E976C84D23125EF0005A1CBA /* CashRebate.m */; };
 		E976C85123125F26005A1CBA /* CashReturnMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = E976C85023125F26005A1CBA /* CashReturnMoney.m */; };
@@ -136,6 +142,18 @@
 		E94B5BBC23507F28009DAF52 /* MVPProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPProtocol.h; sourceTree = "<group>"; };
 		E950502023B2F45600A654C5 /* CarDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarDirector.h; sourceTree = "<group>"; };
 		E950502123B2F45600A654C5 /* CarDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarDirector.m; sourceTree = "<group>"; };
+		E9568B7523B6308300760C81 /* Sale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sale.h; sourceTree = "<group>"; };
+		E9568B7723B6308300760C81 /* AbstractMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractMediator.m; sourceTree = "<group>"; };
+		E9568B7823B6308400760C81 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		E9568B7923B6308400760C81 /* AbstractColleague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractColleague.h; sourceTree = "<group>"; };
+		E9568B7C23B6308400760C81 /* Stock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stock.h; sourceTree = "<group>"; };
+		E9568B7D23B6308400760C81 /* Stock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stock.m; sourceTree = "<group>"; };
+		E9568B7E23B6308400760C81 /* AbstractMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractMediator.h; sourceTree = "<group>"; };
+		E9568B8123B6308400760C81 /* Purchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Purchase.m; sourceTree = "<group>"; };
+		E9568B8423B6308400760C81 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		E9568B8523B6308400760C81 /* AbstractColleague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractColleague.m; sourceTree = "<group>"; };
+		E9568B8923B6308400760C81 /* Purchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Purchase.h; sourceTree = "<group>"; };
+		E9568B8B23B6308400760C81 /* Sale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sale.m; sourceTree = "<group>"; };
 		E976C84823125E40005A1CBA /* CashBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashBase.h; sourceTree = "<group>"; };
 		E976C84923125EDD005A1CBA /* CashNormal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashNormal.h; sourceTree = "<group>"; };
 		E976C84A23125EDD005A1CBA /* CashNormal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashNormal.m; sourceTree = "<group>"; };
@@ -336,6 +354,25 @@
 			path = CarModel;
 			sourceTree = "<group>";
 		};
+		E93E37F523B38E91005166FA /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				E9568B7923B6308400760C81 /* AbstractColleague.h */,
+				E9568B8523B6308400760C81 /* AbstractColleague.m */,
+				E9568B7E23B6308400760C81 /* AbstractMediator.h */,
+				E9568B7723B6308300760C81 /* AbstractMediator.m */,
+				E9568B8423B6308400760C81 /* Mediator.h */,
+				E9568B7823B6308400760C81 /* Mediator.m */,
+				E9568B8923B6308400760C81 /* Purchase.h */,
+				E9568B8123B6308400760C81 /* Purchase.m */,
+				E9568B7523B6308300760C81 /* Sale.h */,
+				E9568B8B23B6308400760C81 /* Sale.m */,
+				E9568B7C23B6308400760C81 /* Stock.h */,
+				E9568B7D23B6308400760C81 /* Stock.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
 		E94B5BAA23507DBC009DAF52 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
@@ -469,6 +506,7 @@
 				E9806B2B230E63A000C95CBC /* AppDelegate.m */,
 				E9806B2D230E63A000C95CBC /* ViewController.h */,
 				E9806B2E230E63A000C95CBC /* ViewController.m */,
+				E93E37F523B38E91005166FA /* Mediator */,
 				E94B5BAA23507DBC009DAF52 /* MVP */,
 				E9061C0B233B46E4004D0F05 /* MVVM */,
 				E9F7255F2314C521007D7904 /* Builder */,
@@ -671,6 +709,7 @@
 				E931959C23B07265009EE6F2 /* MaleBlackHuman.m in Sources */,
 				E9061C1E233B47CB004D0F05 /* CMVVMViewController.m in Sources */,
 				E931959623B07233009EE6F2 /* MaleWhiteHuman.m in Sources */,
+				E9568B9123B6308400760C81 /* Stock.m in Sources */,
 				E950502223B2F45600A654C5 /* CarDirector.m in Sources */,
 				E9061C18233B47A1004D0F05 /* CMVVMModel.m in Sources */,
 				E976C84E23125EF0005A1CBA /* CashRebate.m in Sources */,
@@ -679,6 +718,7 @@
 				E976C86223127ACA005A1CBA /* Sausage.m in Sources */,
 				E93195B723B0EB02009EE6F2 /* CarBuilder.m in Sources */,
 				E9061C22233B603A004D0F05 /* CMVVMTableDataSource.m in Sources */,
+				E9568B9523B6308400760C81 /* AbstractColleague.m in Sources */,
 				E976C85C23127952005A1CBA /* Condiment.m in Sources */,
 				E931958923B07088009EE6F2 /* AbstractBlackHuman.m in Sources */,
 				E94B5BB523507E7B009DAF52 /* MVPModel.m in Sources */,
@@ -694,6 +734,7 @@
 				E9806B2F230E63A000C95CBC /* ViewController.m in Sources */,
 				E931959323B0721F009EE6F2 /* FemaleWhiteHuman.m in Sources */,
 				E93195BA23B0EB9F009EE6F2 /* BenzBuilder.m in Sources */,
+				E9568B9723B6308400760C81 /* Sale.m in Sources */,
 				E9061C15233B4784004D0F05 /* CMVVMViewCell.m in Sources */,
 				E976C86E23128515005A1CBA /* Mp4Player.m in Sources */,
 				E976C85423125FC1005A1CBA /* CashContext.m in Sources */,
@@ -701,14 +742,17 @@
 				E9E6BE512312CF6C00398A66 /* HRDepartment.m in Sources */,
 				E931958323B07066009EE6F2 /* AbstractYellowHuman.m in Sources */,
 				E9806B3A230E63A100C95CBC /* main.m in Sources */,
+				E9568B9323B6308400760C81 /* Purchase.m in Sources */,
 				E9806B2C230E63A000C95CBC /* AppDelegate.m in Sources */,
 				E94B5BB823507E8F009DAF52 /* MVPViewController.m in Sources */,
 				E93195B423B0EACC009EE6F2 /* BmwModel.m in Sources */,
 				E931958D23B071D2009EE6F2 /* FemaleYellowHuman.m in Sources */,
 				E93195AD23B0E578009EE6F2 /* CarModel.m in Sources */,
+				E9568B8E23B6308400760C81 /* AbstractMediator.m in Sources */,
 				E976C84B23125EDD005A1CBA /* CashNormal.m in Sources */,
 				E931958623B07078009EE6F2 /* AbstractWhiteHuman.m in Sources */,
 				E931959023B071E2009EE6F2 /* MaleYellowHuman.m in Sources */,
+				E9568B8F23B6308400760C81 /* Mediator.m in Sources */,
 				E93195BD23B0EBAF009EE6F2 /* BmwBuilder.m in Sources */,
 				E931959923B07254009EE6F2 /* FemaleBlackHuman.m in Sources */,
 				E94B5BBB23507F0C009DAF52 /* MVPNetworkManager.m in Sources */,
