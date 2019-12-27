@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AbstractMediator.h"
+
+@class AbstractMediator;
 
 NS_ASSUME_NONNULL_BEGIN
 

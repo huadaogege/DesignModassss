@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Stock : AbstractColleague
 
+- (void)stock:(AbstractMediator *)mediator;
+
 - (void)increase:(int)num;
 
 - (void)decrease:(int)num;

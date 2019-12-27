@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Sale : AbstractColleague
 
+- (void)sale:(AbstractMediator *)mediator;
+
 - (void)sellIBMComputer:(int)num;
 
 - (int)getSaleStatus;

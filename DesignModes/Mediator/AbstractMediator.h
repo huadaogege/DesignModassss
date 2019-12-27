@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class Purchase;
-@class Stock;
-@class Sale;
+#import "Purchase.h"
+#import "Stock.h"
+#import "Sale.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
