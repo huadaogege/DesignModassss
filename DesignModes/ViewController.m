@@ -14,10 +14,8 @@
 // 策略模式
 #import "CashContext.h"
 // 装饰器模式
-#import "ChickenBurger.h"
-#import "Condiment.h"
-#import "Egg.h"
-#import "Sausage.h"
+#import "GuardFather.h"
+
 // 适配器模式
 #import "AudioPlayer.h"
 // 组合模式
@@ -26,6 +24,10 @@
 #import "FinanceDepartment.h"
 // 建造者模式
 #import "CarDirector.h"
+
+// 中介者模式
+#import "AbstractMediator.h"
+#import "Mediator.h"
 
 // MVVM
 #import "CMVVMViewController.h"
@@ -52,14 +54,9 @@
      */
     
     /* 装饰器模式 */
-    /*
-    ChickenBurger *chickenBurger = [[ChickenBurger alloc] init];
-    NSLog(@"产品:%@ - 价位:%f", [chickenBurger description], [chickenBurger cost]);
-    Egg *eggBurger = [[Egg alloc] initWithChickBurger:chickenBurger];
-    NSLog(@"产品:%@ - 价位:%f", [eggBurger description], [eggBurger cost]);
-    Sausage *sausageBurger = [[Sausage alloc] initWithChickBurger:eggBurger];
-    NSLog(@"产品:%@ - 价位:%f", [sausageBurger description], [sausageBurger cost]);
-     */
+    GuardFather *father = [[GuardFather alloc] init];
+    [father readAndSign];
+    
     
     /* 适配器模式 */
     /*
@@ -100,13 +97,33 @@
      */
     
     /* 建造者模式 */
+    /*
     CarDirector *director = [[CarDirector alloc] init];
     CarModel *benzCarModel = [director getABenzCarModel];
     [benzCarModel run];
     
     CarModel *bmwCarModel = [director getABmwCarModel];
     [bmwCarModel run];
+     */
+    /* 中介者模式 */
+    /*
+    AbstractMediator *mediator = [[Mediator alloc] init];
     
+    NSLog(@"---------- 采购人员采购电脑 ---------");
+    Purchase *purchase = [[Purchase alloc] init];
+    [purchase purchase:mediator];
+    [purchase buyIMBComputer:100];
+
+    NSLog(@"---------- 销售人员销售电脑 ---------");
+    Sale *sale = [[Sale alloc] init];
+    [sale sale:mediator];
+    [sale sellIBMComputer:1];
+
+    NSLog(@"---------- 库房管理人员清理库存 ---------");
+    Stock *stock = [[Stock alloc] init];
+    [stock stock:mediator];
+    [stock clearStock];
+    */
     
     // MVVM
     /*
