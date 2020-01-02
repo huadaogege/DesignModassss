@@ -1,5 +1,5 @@
 //
-//  Decorator.h
+//  ConcreateComponent.h
 //  DesignModes
 //
 //  Created by 崔玉冠 on 2019/12/30.
@@ -10,11 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Decorator : Component
-
-@property(nonatomic, strong) Component *component;
-
-- (Component *)decorator:(Component *)component;
+@interface ConcreateComponent : Component
 
 @end
 

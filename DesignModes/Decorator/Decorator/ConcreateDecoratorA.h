@@ -1,8 +1,8 @@
 //
-//  SortDecorator.h
+//  ConcreateDecoratorA.h
 //  DesignModes
 //
-//  Created by 崔玉冠 on 2019/12/29.
+//  Created by 崔玉冠 on 2019/12/30.
 //  Copyright © 2019 huadao. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SortDecorator : Decorator
-
-- (void)sortDecorator:(AbstractSchoolReport *)sr;
+@interface ConcreateDecoratorA : Decorator
 
 @end
 

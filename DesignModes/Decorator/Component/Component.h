@@ -1,8 +1,8 @@
 //
-//  AbstractSchoolReport.h
+//  Component.h
 //  DesignModes
 //
-//  Created by 崔玉冠 on 2019/12/28.
+//  Created by 崔玉冠 on 2019/12/30.
 //  Copyright © 2019 huadao. All rights reserved.
 //
 
@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AbstractSchoolReport : NSObject
+@interface Component : NSObject
 
-- (void)report;
-
-- (void)sign:(NSString *)name;
+- (void)operation;
 
 @end
 

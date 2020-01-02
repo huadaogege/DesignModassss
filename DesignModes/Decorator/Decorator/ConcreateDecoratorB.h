@@ -1,5 +1,5 @@
 //
-//  Decorator.m
+//  ConcreateDecoratorB.h
 //  DesignModes
 //
 //  Created by 崔玉冠 on 2019/12/30.
@@ -8,6 +8,10 @@
 
 #import "Decorator.h"
 
-@implementation Decorator
+NS_ASSUME_NONNULL_BEGIN
+
+@interface ConcreateDecoratorB : Decorator
 
 @end
+
+NS_ASSUME_NONNULL_END

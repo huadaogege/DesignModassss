@@ -14,7 +14,9 @@
 // 策略模式
 #import "CashContext.h"
 // 装饰器模式
-#import "GuardFather.h"
+#import "ConcreateDecoratorA.h"
+#import "ConcreateDecoratorB.h"
+#import "ConcreateComponent.h"
 
 // 适配器模式
 #import "AudioPlayer.h"
@@ -54,10 +56,15 @@
      */
     
     /* 装饰器模式 */
-    GuardFather *father = [[GuardFather alloc] init];
-    [father readAndSign];
+    /*
+    ConcreateComponent *component = [[ConcreateComponent alloc] init];
+    ConcreateDecoratorA *decoratorA = [[ConcreateDecoratorA alloc] init];
+    ConcreateDecoratorB *decoratorB = [[ConcreateDecoratorB alloc] init];
     
-    
+    component = (ConcreateComponent *)[decoratorA decorator:component];
+    component = (ConcreateComponent *)[decoratorB decorator:component];
+    [component operation];
+    */
     /* 适配器模式 */
     /*
     [AudioPlayer playWithName:@"智商二五零.mp3" type:@"mp3"];
