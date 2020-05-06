@@ -36,6 +36,9 @@
 // MVP
 #import "MVPViewController.h"
 
+// 锁
+#import "Locks.h"
+
 @interface ViewController ()
 
 @end
@@ -151,7 +154,8 @@
 //    [human getSex];
 //    [human talk];
     
-    
+    Locks *lock = [[Locks alloc] init];
+    [lock test];
 }
 
 
