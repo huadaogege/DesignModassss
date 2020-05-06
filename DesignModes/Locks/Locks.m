@@ -31,9 +31,13 @@ static int condition = 0;
 - (void)test {
 //    [self synchronized];
 //    [self synchronizedTest];
-    [self condationTest];
+//    [self synchronizedTestNSLock];
+//    [self condationTest];
+//    [self nslock];
+    [self recursiveLock];
 }
 
+#pragma mark -- 互斥锁总结： --
 #pragma mark -- @synchronized --
 
 - (void)synchronized {
@@ -53,13 +57,80 @@ static int condition = 0;
 }
 
 - (void)synchronizedTest {
+    // 在此情况下，不同线程中不断地retain 和 release，会存在某个时刻，多线程同时对testArray进行release，导致crash
     self.testArray = [NSMutableArray array];
-    
     for (NSInteger i = 0; i < 200000; i ++) {
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             self->_testArray = [NSMutableArray array];
         });
     }
+}
+
+- (void)synchronizedTestSync {
+    // 在此情况下，依然会崩溃，因为@synchronized(nil) = do nothing，被锁对象为nil的时候，
+    // @synchronized并不尽如人意，使用NSLock
+    _testArray = [NSMutableArray array];
+    for (NSInteger i = 0; i < 200000; i ++) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            @synchronized (_testArray) {
+                _testArray = [NSMutableArray array];
+            }
+        });
+    }
+}
+
+- (void)synchronizedTestNSLock {
+    // 该情况下才是线程安全的
+    self.testArray = [NSMutableArray array];
+    NSLock *lock = [[NSLock alloc] init];
+    for (NSInteger i = 0; i < 200000; i ++) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            [lock lock];
+             _testArray = [NSMutableArray array];
+            [lock unlock];
+        });
+    }
+}
+
+#pragma mark -- NSLock --
+
+- (void)nslock {
+    NSLock *lock = [[NSLock alloc] init];
+    //线程1
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [lock lock];
+        NSLog(@"线程1");
+        sleep(8);
+        [lock unlock];
+        NSLog(@"线程1解锁成功");
+    });
+    //线程2
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(1);//以保证让线程2的代码后执行
+        [lock lock];
+        NSLog(@"线程2");
+        [lock unlock];
+    });
+}
+
+#pragma mark -- NSRecursiveLock --
+
+- (void)recursiveLock {
+    NSRecursiveLock *lock = [[NSRecursiveLock alloc] init];
+//    如果使用NSLock会出现死锁：lock会先上锁，但未执行解锁的时候，就会进入递归的下一层再次请求上锁，阻塞了该线程，线程被阻塞了自然后面的解锁代码不会执行，而形成了死锁。而NSRecursiveLock就是为了解决这个问题。
+//    NSLock *lock = [[NSLock alloc] init];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        static void (^testMethod)(int);
+        testMethod = ^ (int value) {
+            [lock lock];
+            if (value > 0) {
+                NSLog(@"current value = %d", value);
+                testMethod(value - 1);
+            }
+            [lock unlock];
+        };
+        testMethod(10);
+    });
 }
 
 #pragma mark -- 读写锁三种实现方式 --
@@ -144,6 +215,7 @@ static int condition = 0;
 }
 
 #pragma mark -- 条件锁 --
+#pragma mark -- Condation --
 
 - (void)condationTest {
     self.testCondation = [[NSCondition alloc] init];
@@ -184,6 +256,27 @@ static int condition = 0;
     self.productCount -= 1;
     NSLog(@"消费一个 还剩 count %zd ",self.productCount);
     [self.testCondation unlock];
+}
+
+#pragma mark -- CondationLock --
+
+- (void)testCondationLock {
+    NSConditionLock *condationLock = [[NSConditionLock alloc] initWithCondition:2];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        [condationLock lockWhenCondition:1];
+        NSLog(@"线程1");
+        [condationLock unlockWithCondition:0];
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        [condationLock lockWhenCondition:2];
+        NSLog(@"线程2");
+        [condationLock unlockWithCondition:1];
+    });
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [condationLock lock];
+        NSLog(@"线程3");
+        [condationLock unlock];
+    });
 }
 
 @end
