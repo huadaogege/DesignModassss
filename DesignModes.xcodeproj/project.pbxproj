@@ -62,6 +62,7 @@
 		E9806B44230E63A100C95CBC /* DesignModesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9806B43230E63A100C95CBC /* DesignModesTests.m */; };
 		E9806B4F230E63A100C95CBC /* DesignModesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9806B4E230E63A100C95CBC /* DesignModesUITests.m */; };
 		E9923D3D24625AAD00D4B2ED /* Locks.m in Sources */ = {isa = PBXBuildFile; fileRef = E9923D3C24625AAD00D4B2ED /* Locks.m */; };
+		E9D21043246556B6006C9494 /* Socket.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D21042246556B6006C9494 /* Socket.m */; };
 		E9E6BE4E2312CD3100398A66 /* ConcreteCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE4D2312CD3100398A66 /* ConcreteCompany.m */; };
 		E9E6BE512312CF6C00398A66 /* HRDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE502312CF6C00398A66 /* HRDepartment.m */; };
 		E9E6BE542312D13000398A66 /* FinanceDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6BE532312D13000398A66 /* FinanceDepartment.m */; };
@@ -203,6 +204,8 @@
 		E9806B50230E63A100C95CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9923D3B24625AAD00D4B2ED /* Locks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Locks.h; sourceTree = "<group>"; };
 		E9923D3C24625AAD00D4B2ED /* Locks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Locks.m; sourceTree = "<group>"; };
+		E9D21041246556B6006C9494 /* Socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Socket.h; sourceTree = "<group>"; };
+		E9D21042246556B6006C9494 /* Socket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Socket.m; sourceTree = "<group>"; };
 		E9E6BE4B2312CB4C00398A66 /* Company.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
 		E9E6BE4C2312CD3000398A66 /* ConcreteCompany.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCompany.h; sourceTree = "<group>"; };
 		E9E6BE4D2312CD3100398A66 /* ConcreteCompany.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCompany.m; sourceTree = "<group>"; };
@@ -528,6 +531,7 @@
 				E9806B2B230E63A000C95CBC /* AppDelegate.m */,
 				E9806B2D230E63A000C95CBC /* ViewController.h */,
 				E9806B2E230E63A000C95CBC /* ViewController.m */,
+				E9D210402465569D006C9494 /* Socket */,
 				E9923D3A24625A9900D4B2ED /* Locks */,
 				E93E37F523B38E91005166FA /* Mediator */,
 				E94B5BAA23507DBC009DAF52 /* MVP */,
@@ -580,6 +584,15 @@
 				E9923D3C24625AAD00D4B2ED /* Locks.m */,
 			);
 			path = Locks;
+			sourceTree = "<group>";
+		};
+		E9D210402465569D006C9494 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				E9D21041246556B6006C9494 /* Socket.h */,
+				E9D21042246556B6006C9494 /* Socket.m */,
+			);
+			path = Socket;
 			sourceTree = "<group>";
 		};
 		E9E6BE4A2312C7C700398A66 /* Composite */ = {
@@ -788,6 +801,7 @@
 				E93195BD23B0EBAF009EE6F2 /* BmwBuilder.m in Sources */,
 				E931959923B07254009EE6F2 /* FemaleBlackHuman.m in Sources */,
 				E94B5BBB23507F0C009DAF52 /* MVPNetworkManager.m in Sources */,
+				E9D21043246556B6006C9494 /* Socket.m in Sources */,
 				E976C85123125F26005A1CBA /* CashReturnMoney.m in Sources */,
 				E95642E923B9E798008E804F /* Decorator.m in Sources */,
 				E9923D3D24625AAD00D4B2ED /* Locks.m in Sources */,

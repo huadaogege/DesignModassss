@@ -39,7 +39,12 @@
 // 锁
 #import "Locks.h"
 
+// Socket
+#import "Socket.h"
+
 @interface ViewController ()
+
+@property (nonatomic, strong) UIWebView * webView;
 
 @end
 
@@ -154,8 +159,25 @@
 //    [human getSex];
 //    [human talk];
     
-    Locks *lock = [[Locks alloc] init];
-    [lock test];
+//    Locks *lock = [[Locks alloc] init];
+//    [lock test];
+    
+    // Socket 发送请求
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    self.webView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:self.webView];
+    
+    Socket *socket = [[Socket alloc] init];
+    NSString *response = [socket responseTest];
+    
+    // 截取响应头，只保留响应体， 响应头结束的标识 \r\n\r\n
+    // 找指定字符串所在的范围，从它之后的第一个位置开始截取字符串
+    NSRange range = [response rangeOfString:@"\r\n\r\n"];
+    // 截取响应体
+    NSString *html = [response substringFromIndex:range.length + range.location];
+    // baseURL为html依赖的外部文件所在的地址
+    [self.webView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://www.baidu.com"]];
+
 }
 
 
